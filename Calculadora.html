@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Envíos</title>
+    <link rel="stylesheet" href="stylesss.css">
+</head>
+<body>
+    <header>
+        <img src="GOLDEN.png" alt="Logo de la calculadora de envíos" class="logo">
+        <h1 class="title">Calculadora de Envíos</h1>
+        <p class="message">Nuestra calculadora automática de envíos aéreos y marítimos hace que el proceso sea rápido, fácil y sin complicaciones. 
+            ¡Prueba ahora mismo y descubre lo simple que puede ser enviar tus paquetes con nosotros!</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <div class="inputs">
+                    <label for="peso">Peso del envío en libras:</label>
+                    <input type="number" id="peso" name="peso" required>
+                    <label for="ancho">Ancho:</label>
+                    <input type="number" id="ancho" name="ancho" required>
+                    <label for="alto">Alto:</label>
+                    <input type="number" id="alto" name="alto" required>
+                    <label for="largo">Largo:</label>
+                    <input type="number" id="largo" name="largo" required>     
+                </div>
+                <div class="results">
+                    <button class="btn" onclick="calcularEnvioAereo()">Calcular Envío Aéreo</button>
+                    <button class="btn" onclick="calcularEnvioMaritimo()">Calcular Envío Marítimo</button>
+                    <button id="borrarDatos">Borrar Datos</button>                    
+                    <h3>Costo del envío aéreo</h3>
+                    <div class="resultado-container">
+                        <div id="resultadoAereo" class="resultado"></div>
+                    </div>
+                    <h3>Costo del envío marítimo</h3>
+                    <div class="resultado-container">
+                        <div id="resultadoMaritimo" class="resultado"></div>
+                        <button id="volver" class="btn" onclick="window.location.href = 'index.html'">Volver</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

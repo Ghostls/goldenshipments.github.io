@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    background-color: #ffffff;
+    color: #ffbf00;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Centra todo el contenido dentro del contenedor */
+}
+
+/* Estilos del encabezado */
+.header {
+    text-align: center;
+    padding: 120px 0;
+    color: #000000;
+    background-color: #ffffff; /* Cambio de color de fondo */
+}
+
+.logo-container {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.header-content {
+    margin-top: 25px;
+    width: calc(100% - 270px); /* Ajuste para el nuevo tamaño del logo */
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Estilos de la navegación */
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #96929265; /* Cambio de color de fondo */
+    padding: 10px 0;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffb617;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffb617;
+}
+
+#resultadoAereo, #resultadoMaritimo {
+    margin-top: 20px;
+}
+
+/* Estilos del pie de página */
+.footer {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 20px 0;
+}
+
+
